@@ -349,6 +349,7 @@ ul {
 
 p {
   line-height: 1.5;
+  font-size: 1.05em;
 }
 
 @media (min-width: 768px) {
@@ -359,8 +360,9 @@ p {
 }
 
 .theme__colors.grid__col--3 {
+  color: #5a5a5a;
   background: #dda3f1;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -372,8 +374,9 @@ p {
 }
 
 .theme__colors.grid__col--4 {
+  color: #5a5a5a;
   background: #66d6f0;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -385,8 +388,9 @@ p {
 }
 
 .theme__colors.grid__col--5 {
+  color: #5a5a5a;
   background: #81da96;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -398,8 +402,9 @@ p {
 }
 
 .theme__colors.grid__col--6 {
+  color: #5a5a5a;
   background: #33a5c6;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -411,8 +416,9 @@ p {
 }
 
 .theme__colors.grid__col--7 {
+  color: #5a5a5a;
   background: #ee969c;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -424,8 +430,9 @@ p {
 }
 
 .theme__colors.grid__col--8 {
+  color: #5a5a5a;
   background: #ee8968;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -437,8 +444,9 @@ p {
 }
 
 .theme__colors.grid__col--12 {
+  color: #5a5a5a;
   background: #77e2c1;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -596,8 +604,8 @@ p {
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 8px;
   margin-bottom: 8px;
   box-shadow: 0 0 4px #dadada;
@@ -627,8 +635,8 @@ p {
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 8px;
   margin-bottom: 8px;
   box-shadow: 0 0 4px #dadada;
@@ -658,8 +666,8 @@ p {
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 8px;
   margin-bottom: 8px;
   box-shadow: 0 0 4px #dadada;
@@ -689,8 +697,8 @@ p {
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 8px;
   margin-bottom: 8px;
   box-shadow: 0 0 4px #dadada;
@@ -720,8 +728,8 @@ p {
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 8px;
   margin-bottom: 8px;
   box-shadow: 0 0 4px #dadada;
@@ -821,7 +829,7 @@ p {
 
 .headline--secondary {
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.125em;
 }
 @media (min-width: 768px) {
   .headline--secondary {
@@ -832,7 +840,7 @@ p {
 .blockquote {
   margin-left: 24px;
   margin-right: 24px;
-  padding-left: 16px;
+  padding-left: 32px;
   font-size: 1.5em;
   font-style: italic;
   line-height: 1.3;
@@ -847,23 +855,29 @@ p {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .form {
+    padding-left: 32px;
+  }
+}
+
 .form__label--hidden {
   display: none;
 }
 
 .form__input {
-  font-size: 1em;
+  font-size: 0.9375em;
   line-height: 2.7;
   font-weight: 500;
   display: block;
   width: calc(100% - 32px);
   margin-left: 16px;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   padding-right: 16px;
   padding-left: 16px;
   border: none;
-  border-bottom: 4px solid #5fe0c1;
+  border-bottom: 6px solid #5fe0c1;
 }
 .form__input:focus {
   outline: none;

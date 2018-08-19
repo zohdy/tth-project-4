@@ -7,7 +7,7 @@
 
 .headline--secondary {
   font-weight: 300;
-  font-size: em(16);
+  font-size: em(18);
   @include mq('desktop')  {
     margin-top: 0;
   }
@@ -16,7 +16,7 @@
 .blockquote {
   margin-left: 24px;
   margin-right: 24px;
-  padding-left: 16px;
+  padding-left: 32px;
   font-size: em(24);
   font-style: italic;
   line-height: 1.3;

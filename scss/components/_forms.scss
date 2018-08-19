@@ -1,20 +1,23 @@
 .form {
+  @include mq('desktop') {
+    padding-left: 32px;
+  }
 }
 
 .form__label--hidden {
   display: none;
 }
 .form__input {
-  @include text(em(16), 2.7, 500);
+  @include text(em(15), 2.7, 500);
   display: block;
   width: calc(100% - 32px);
   margin-left: 16px;
   margin-top: 16px;
-  margin-bottom:16px;
+  margin-bottom:24px;
   padding-right: 16px;
   padding-left: 16px;
   border: none;
-  border-bottom: 4px solid $color-primary;
+  border-bottom: 6px solid $color-primary;
   &:focus {
     outline:none;
   }

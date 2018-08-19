@@ -8,8 +8,9 @@
 // Setting the color and styles on each col of the theme__colors grid
 @each $item in $grid-items {
   .theme__colors.grid__col--#{$item} {
+    @include text(null, $color : darken($color-text, 25%));
     background: map_get($grid-colors, $item);
-    padding: 16px;
+    padding: 12px;
     border-radius: 4px;
     margin-top:4px;
     margin-bottom:4px;
@@ -50,7 +51,7 @@
 
 // Targeting the button container in desktop mode
 .grid__col--12 {
-    @media (min-width: $break-desktop) {
+    @include mq('desktop'){
       @include flexy($justify : space-around);
       margin-top: 24px;
       width: 100%;
@@ -59,7 +60,7 @@
 
 // Grid headline
 #grid {
-  @media (min-width: $break-desktop) {
+  @include mq('desktop'){
     margin-top: 56px;
   }
 }
