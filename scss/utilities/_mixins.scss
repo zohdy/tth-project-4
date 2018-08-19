@@ -1,0 +1,66 @@
+@mixin center-container($max) {
+  max-width: $max;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flexy($display: flex, $direction: null, $wrap: null, $justify: null, $flex-multi : 0 1 auto) {
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  flex: $flex-multi;
+}
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin mq($break) {
+  @if $break == 'mobile' {
+    @media (min-width : $break-mobile)  {
+      @content;
+    }
+  }
+  @else if $break == 'desktop' {
+    @media (min-width: $break-desktop) {
+      @content;
+    }
+  }
+  @else {
+    @error 'No value could be retrieved for `#{$break}`';
+  }
+}
+
+@mixin btn-theme($btn-color) {
+  display: inline-block;
+  width: 100%;
+  background: $btn-color;
+  color: $white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border:none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 4px $color-shade;
+  &:hover {
+    cursor: pointer;
+    background: darken($btn-color, 25%);
+  }
+  &:first-child{
+    margin-top: 48px;
+  }
+  &:last-child{
+    margin-bottom: 48px;
+  }
+  @include mq('desktop')  {
+    flex: 0 15%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

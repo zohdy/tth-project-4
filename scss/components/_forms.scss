@@ -1,0 +1,21 @@
+.form {
+}
+
+.form__label--hidden {
+  display: none;
+}
+.form__input {
+  @include text(em(16), 2.7, 500);
+  display: block;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom:16px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: none;
+  border-bottom: 4px solid $color-primary;
+  &:focus {
+    outline:none;
+  }
+}

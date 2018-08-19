@@ -1,0 +1,21 @@
+.img {
+    &--logo {
+       @extend %center-image;
+    }
+    &--avatar {
+        @extend %center-image;
+        max-width: 100%;
+        margin-top: 32px;
+        margin-bottom: 48px;
+        @include mq('desktop')  {
+            margin-bottom: 0;
+            margin-top:16px;
+        }
+    }
+    &--frame {
+        @extend %center-image;
+        max-width: 100%;
+        padding: 8px;
+        border: 16px solid $color-shade;
+    }
+}

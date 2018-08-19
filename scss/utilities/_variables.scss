@@ -1,0 +1,42 @@
+// Default
+$browser-context: 16;
+
+// Base Colors
+$color-primary: #5fe0c1;
+$color-accent: #59ddfa;
+$color-text: #9a9a9a;
+$color-shade: lighten($color-text, 25%);
+$white: #fff;
+
+// Button Colors
+$btn-default: $color-accent;
+$btn-success: #41bb63;
+$btn-error: #dd6569;
+$btn-warning: #ef6c3f;
+$btn-info: #7f64b4;
+
+// Grid
+$grid-colors:(
+  '12': #77e2c1,
+  '8' : #ee8968,
+  '7' : #ee969c,
+  '6' : #33a5c6,
+  '5' : #81da96,
+  '4' : #66d6f0,
+  '3' : #dda3f1,
+);
+
+$grid-items: ('3', '4', '5', '6', '7', '8', '12');
+$gutter: 16px;
+
+// Fonts
+$font-stack: Helvetica Neue, Helvetica, sans-serif;
+
+//Layout
+$max-width-desktop: 1280px;
+
+//Breakpoint
+$break-mobile: 480px;
+$break-desktop: 768px;
+
+$browser-context: 16px;

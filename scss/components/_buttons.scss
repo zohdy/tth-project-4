@@ -1,0 +1,24 @@
+.btn {
+  &--default {
+    @include btn-theme($btn-default);
+  }
+  &--success {
+    @include btn-theme($btn-success);
+  }
+  &--error {
+    @include btn-theme($btn-error);
+  }
+  &--warning {
+    @include btn-theme($btn-warning);
+  }
+  &--info {
+    @include btn-theme($btn-info);
+  }
+}
+
+// Buttons headline
+#buttons {
+  @include mq('desktop')  {
+    margin-top: 32px;
+  }
+}
