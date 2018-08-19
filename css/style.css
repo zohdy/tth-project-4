@@ -338,47 +338,17 @@ template {
 
 * {
   box-sizing: border-box;
-  font-size: 1em;
-  line-height: 1.5;
-  color: #9a9a9a;
   font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #9a9a9a;
 }
 
-.container {
-  margin-top: 48px;
-  padding-left: 48px;
-  padding-right: 48px;
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 96px;
-    padding-right: 96px;
-  }
+ul {
+  list-style-type: none;
 }
 
-.card {
-  margin-top: 96px;
-  margin-bottom: 96px;
-}
-@media (min-width: 768px) {
-  .card {
-    margin-top: 0;
-    margin-right: 16px;
-  }
-}
-
-#images {
-  margin-top: 64px;
-  margin-bottom: 56px;
-}
-@media (min-width: 768px) {
-  #images {
-    margin-top: 0;
-    margin-bottom: 48px;
-  }
+p {
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -793,8 +763,8 @@ template {
 }
 .img--frame {
   max-width: 100%;
-  padding: 8px;
-  border: 16px solid #dadada;
+  padding: 12px;
+  border: 1px solid #dadada;
 }
 
 .nav {
@@ -814,9 +784,6 @@ template {
   }
 }
 
-.nav__item {
-  list-style-type: none;
-}
 .nav__item a {
   font-size: 1em;
   color: #9a9a9a;
@@ -900,6 +867,43 @@ template {
 }
 .form__input:focus {
   outline: none;
+}
+
+.container {
+  margin-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+.card {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+@media (min-width: 768px) {
+  .card {
+    margin-top: 0;
+    margin-right: 16px;
+  }
+}
+
+#images {
+  margin-top: 64px;
+  margin-bottom: 56px;
+}
+@media (min-width: 768px) {
+  #images {
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

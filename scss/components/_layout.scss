@@ -1,0 +1,30 @@
+.container {
+  margin-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+  @include mq('desktop'){
+    @include center-container($max-width-desktop);
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+
+.card {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  @include mq('desktop') {
+    margin-top: 0;
+    margin-right: 16px;
+  }
+}
+
+// Images section
+#images {
+  margin-top: 64px;
+  margin-bottom: 56px;
+  @include mq('desktop')  {
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
